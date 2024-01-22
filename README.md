@@ -2,13 +2,11 @@
 
 ## Objective
 
-In this project explored the task of speech synthesis by implementing the FastSpeech2 model. The model was developed based on the paper ["FastSpeech 2: Fast and High-Quality End-to-End Text to Speech"](http://keithito.com/LJ-Speech-Dataset). For training the model, the [LJSpeech dataset](http://keithito.com/LJ-Speech-Dataset) was used.
-
-An attempt was made to reproduce the results of the research and achieve high-quality synthesized speech, which was quite successful. Experiments were also conducted in speech synthesis with different pitches, speeds, and energies. The test audios are included in the Wandb report.
+In this project explored the task of speech recognition by implementing the DeepSpeech2 model. The model was developed based on the paper ["Deep Speech 2 : End-to-End Speech Recognition in English and Mandarin"](http://proceedings.mlr.press/v48/amodei16.pdf). For training the model, the [Librispeech dataset](https://www.kaggle.com/datasets/a24998667/librispeech) was used.
 
 ## Report
 
-[Wandb link]()
+[Wandb link](https://api.wandb.ai/links/kitsuyomi/r1280ing)
 
 ## Installation
 
@@ -27,8 +25,8 @@ Run the setup script to download the model checkpoint and test the model by data
 ```
 !python setup.py
 !python test.py \
-   -c /kaggle/working/hw_asr/default_test_model/config.json \
-   -r /kaggle/working/hw_asr/default_test_model/checkpoint.pth \
+   -c default_test_model/config.json \
+   -r default_test_model/checkpoint.pth \
    -t test_data/data \
    -o test_result.json
 ```
@@ -43,7 +41,7 @@ Run the script to reproduce training:
 
 ## Test audio
 
-To explore examples of text recognition, please refer to the [Wandb report]()
+To explore examples of text recognition, please refer to the [Wandb report](https://api.wandb.ai/links/kitsuyomi/r1280ing)
 
 ## License
 
